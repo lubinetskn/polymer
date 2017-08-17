@@ -129,3 +129,52 @@ img {
   padding: 4px 0;
   text-transform: uppercase;
 }
+.info {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+}
+
+.info p {
+  margin: 0 0 20px;
+}
+.subtext {
+  margin-top: 30px;
+}
+
+.spheres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.spheres-item {
+  height: 203px;
+  flex-grow: 1;
+  width: 33%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.spheres-title {
+  background: rgba(172, 53, 60, 0.80);
+  /* ГИДРОИЗОЛЯЦИЯ КРОВЛИ: */
+  font-family: BebasNeueRegular;
+  font-size: 21px;
+  color: #ffffff;
+  letter-spacing: 0.95px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.spheres-item img {
+  object-fit: cover;
+}
+.whies-item img {
+  height: 145px;
+}
+.why__pictures img {
+  height: 95px;
+}
