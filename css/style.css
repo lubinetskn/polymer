@@ -1,5 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 img {
   max-width: 100%;
+}
+
+.main-container {
+  height: 830px;
 }
 
 .header-logo {
@@ -9,7 +16,7 @@ img {
   padding: 40px 24px 10px;
   box-sizing: border-box;
   position: relative;
-  top: -105px;
+  top: -130px;
 }
 
 .telephone {
@@ -17,6 +24,9 @@ img {
   font-size: 24px;
   color: #ffffff;
   letter-spacing: 0.27px;
+
+  margin: 0;
+  padding: 20px 0;
 }
 
 [class*='-inner-panes'] {
@@ -28,4 +38,94 @@ img {
   height: 831px;
   background: url("../img/main.png");
   background-size: cover;
+}
+.title--gray,
+.title--red {
+  font-family: BebasNeueBold;
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 0.53px;
+  line-height: 53px;
+  padding: 25px 30px;
+  display: block;
+}
+.btn {
+  font-family: BebasNeueBold;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0.27px;
+  width: 189px;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(224, 171, 43, .8);
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+.title--red {
+  width: 824px;
+  position: relative;
+  z-index: 2;
+  background: rgba(149, 48, 48, .8);
+}
+.title--gray {
+  width: 635px;
+  margin: 0 0 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -16px;
+  background: rgba(156, 162, 164, .8);
+}
+
+.back-setka {
+  background: url(../img/grey_background.png);
+  background-size: 100px;
+}
+
+.main-container h1 {
+  font-family: BebasNeueRegular;
+  font-size: 50px;
+  color: #ac353c;
+  letter-spacing: 2.27px;
+}
+
+.main-container h2 {
+  font-family: BebasNeueRegular;
+  font-size: 23px;
+  color: #404040;
+  letter-spacing: 1.05px;
+}
+
+.column {
+  display: inline-block;
+  text-align: center;
+  width: 190px;
+  margin-right: 40px;
+}
+.column__firstcell {
+  font-family: BebasNeueRegular;
+  font-size: 72px;
+  color: #ac353c;
+  letter-spacing: 3.27px;
+  line-height: 1;
+  border: 5px solid;
+  padding: 29px 0;
+}
+.column__firstcell div {
+  font-family: BebasNeueRegular;
+  font-size: 144px;
+  color: #ac353c;
+  letter-spacing: 6.55px;
+  line-height: 134px;
+}
+
+.column__secondcell {
+  font-size: 20px;
+  color: #404040;
+  letter-spacing: 0.91px;
+  border: 5px solid #404040;
+  border-top: none;
+  padding: 4px 0;
+  text-transform: uppercase;
 }
