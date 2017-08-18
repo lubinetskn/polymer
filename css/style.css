@@ -2,21 +2,33 @@
   box-sizing: border-box;
 }
 @font-face {
-    font-family: 'BebasNeueBold';
-    font-style: normal;
-    font-weight: 600;
-    src: local('BebasNeueBold'),
-        url('../fonts/BebasNeueBold.ttf') format('ttf');
+  font-family: 'BebasNeueBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('BebasNeueBold'), url('../fonts/BebasNeueBold.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'BebasNeueRegular';
-    font-style: normal;
-    font-weight: 400;
-    src: local('BebasNeueRegular'),
-        url('../fonts/BebasNeueRegular.ttf') format('ttf');
+  font-family: 'BebasNeueRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('BebasNeueRegular'),
+    url('../fonts/BebasNeueRegular.ttf') format('ttf');
 }
 img {
   max-width: 100%;
+}
+
+use.ic-2 {
+  stroke: #fff;
+  stroke-width: 10;
+  fill: transparent;
+  width: 151px;
+}
+use.ic-1 {
+  stroke: #9ca2a4;
+  stroke-width: 10;
+  fill: transparent;
+  width: 151px;
 }
 
 .main-container {
@@ -70,13 +82,13 @@ img {
   color: #ffffff;
   border: none;
   letter-spacing: 0.27px;
-  width: 189px;
+  min-width: 189px;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
   text-decoration: none;
   text-align: center;
   background: rgba(224, 171, 43, .8);
-  display: block;
+  display: inline-block;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
 }
 .title--red {
@@ -163,7 +175,7 @@ img {
   margin-top: 30px;
   font-family: Roboto-Regular;
   font-size: 18px;
-  color: #9CA2A4;
+  color: #9ca2a4;
   letter-spacing: 0.82px;
 }
 
@@ -197,6 +209,10 @@ img {
 }
 .spheres-item img {
   object-fit: cover;
+  transition: all 0.4s;
+}
+.spheres-item img:hover {
+  transform: scale(1.2);
 }
 .whies {
   font-size: 0;
@@ -228,6 +244,9 @@ img {
 }
 
 /* Галерея */
+.galery .slick-track {
+  transition: all 0.4s;
+}
 .galery .galery-item {
   width: 480px;
   height: 320px;
