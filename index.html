@@ -135,27 +135,17 @@
 
     <section class="main-container back-grey">
         <div class="main wrapper clearfix">
-            <div style="width:380px;display:inline-block;">
+            <div class="main-container__logo">
                 <svg class="logo" viewBox="0 0 140 125" width="139" height="100" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <use class="ic-2" xlink:href="#logo" x="0" y="0" />
                 </svg>
                 <h1>ТЕХНОЛОГИЯ</h1>
                 <h2>Сферы применения</h2>
             </div>
-            <div style="
-                font-family: Roboto Condensed;
-    font-size: 21px;
-    color: #FFFFFF;
-    letter-spacing: 0.95px;
-    display: inline-block;
-    width: 630px;
-    padding-left: 30px;
-}">
+            <div class="main-container__info">
                 Специалисты компании СпецПолимер разработали комплексные решения по гидроизоляции и защите поверхности на основе полимочевины
                 для различных сфер:
             </div>
-
-
 
         </div>
         <div class="spheres">
@@ -184,15 +174,15 @@
                 <div class="spheres-title">НАПОЛЬНЫЕ ПОКРЫТИЯ</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_4.jpg" alt="">
+                <img src="./img/spheres_7.jpg" alt="">
                 <div class="spheres-title">АНТИККОРРОЗИОННАЯ ЗАШИТА НЕФТЕГАЗОВОГО ОБОРУДОВАНИЯ</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_5.jpg" alt="">
+                <img src="./img/spheres_8.jpg" alt="">
                 <div class="spheres-title">АНТИККОРРОЗИОННАЯ ЗАШИТА СУДОВ</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_6.jpg" alt="">
+                <img src="./img/spheres_9.jpg" alt="">
                 <div class="spheres-title">ЗАЩИТНОЕ ДЕКОРАТИВНОЕ ПОКРЫТИЯ</div>
             </div>
         </div>
@@ -304,12 +294,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <div class="btn">Показать на карте</div>
-                            </td>
-                            <td>
-                                <div class="btn">Показать на карте</div>
-                            </td>
+                            <td><div class="btn">Показать на карте</div></td>
+                            <td style="padding-left: 30px;"><div class="btn">Показать на карте</div></td>
                         </tr>
                     </table>
 
@@ -351,7 +337,11 @@
                         <i class="fa fa-fw fa-envelope icon"></i>
                         <span class="input__label-content">Ваш E-mail</span>
                         </label>
-                        </span> <input type="hidden" id="clientflat" name="clientflat">
+                        </span> 
+                        <span class="border">
+                            <textarea name="clientmessage" placeholder="" required="" rows="6"></textarea>
+                        </span>
+                        <input type="hidden" id="clientflat" name="clientflat">
                         <input type="hidden" id="clientkorpus" name="clientkorpus">
                         <input type="submit" class="btn" value="Отправить сообщение">
 
