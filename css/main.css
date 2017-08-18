@@ -1,5 +1,3 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
 html {
   color: #222;
   font-size: 1em;
@@ -51,9 +49,7 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
+/* ===== Initializr Styles ====== */
 
 body {
   font: 16px/26px Helvetica, Helvetica Neue, Arial;
@@ -143,10 +139,6 @@ nav a:hover {
 .ie7 .title {
   padding-top: 20px;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 /* ==========================================================================
    Media Queries
