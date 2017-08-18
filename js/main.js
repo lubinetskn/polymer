@@ -2,7 +2,7 @@ $('.galery').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
-  variableWidth: true,
+  //variableWidth: true,
   dots: true,
   arrows: false,
   focusOnSelect: true,
