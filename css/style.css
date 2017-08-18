@@ -248,6 +248,7 @@ use.ic-1 {
 }
 
 /* Галерея */
+/*
 .galery .slick-track {
   transition: all 0.4s;
 }
@@ -259,11 +260,16 @@ use.ic-1 {
   opacity: 0.4;
   position: relative;
   margin-top: 10px;
+  width: 100%;
 }
-.galery .galery-item img {
-  object-fit: cover;
-  cursor: pointer;
+
+.galery  .slick-active.slick-center .galery-item {
+
+  display: flex;
+  opacity: 1;
+  margin-top: 0;
 }
+
 
 .slick-track {
   height: 500px;
@@ -272,13 +278,36 @@ use.ic-1 {
 .galery .slick-slide.slick-active:focus {
   outline: none;
 }
+*/
+.galery .galery-item {
+  position: relative;
+  height: 346px;
+  opacity: .4;
+  margin: 10px 0 20px;
+  overflow: hidden;
+  transition: all 0.3s;
+  display: flex;
+}
 
 .galery  .slick-active.slick-center .galery-item {
-  width: 520px;
-  height: 346px;
-  display: flex;
   opacity: 1;
-  margin-top: 0;
+  margin: 0;
+  transform: scale(1.08);
+  z-index: 1;
+}
+.galery .galery-item,
+.galery .slick-slide:focus {
+  transition: all 0.3s;
+  outline: none !important;
+}
+
+.galery .slick-slide {
+  transition: all 0.3s;
+}
+
+.galery .galery-item img {
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .galery .slick-dots li button:before {
@@ -375,7 +404,6 @@ use.ic-1 {
 }
 
 .modal__form {
-  width: 500px;
   padding-top: 30px;
   font-size: 12px;
   overflow-y: hidden;
