@@ -5,6 +5,7 @@ $('.galery').slick({
   variableWidth: true,
   dots: true,
   arrows: false,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 768,
