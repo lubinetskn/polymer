@@ -29,10 +29,11 @@ $('.galery').slick({
 });
 
 
-$(".header-container nav").on("click","ul li a",function(event){
+$("body").on("click",".trans-link",function(event){
   event.preventDefault();
   var id=$(this).attr('href'),top=$(id).offset().top;
   $('body,html').animate({scrollTop:top-30},1500);
+});
 
 ymaps.ready(function() {
   var myMap = new ymaps.Map(
