@@ -133,8 +133,19 @@ use.ic-1 {
   font-weight: 100;
   margin-bottom: 25px;
 }
-
-/* Инфо */
+.main-container__logo {
+  display:inline-block;
+  width:380px;
+}
+.main-container__info {
+  font-family: Roboto Condensed;
+  font-size: 21px;
+  color: #FFFFFF;
+  letter-spacing: 0.95px;
+  display: inline-block;
+  width: 630px;
+  padding-left: 30px;
+}
 
 .column {
   display: inline-block;
@@ -416,7 +427,9 @@ tbody {
   font-size: 18px;
   display: none;
 }
-
+.modal__form .btn {
+  margin-top: 30px;
+}
 .modal__form {
   padding-top: 30px;
   font-size: 12px;
@@ -432,7 +445,16 @@ tbody {
   margin-bottom: 5px;
   width: calc(100% - 10px);
   vertical-align: top;
+  background: #fff;
+  overflow: hidden;
+  padding: 0.25em 0;
   border-bottom: 2px solid #ad353c;
+}
+.border {
+  border-bottom: 2px solid #ad353c;
+}
+textarea:focus {
+  outline: none;
 }
 .input__field {
   position: relative;
@@ -471,11 +493,6 @@ tbody {
   display: block;
   padding: 1.6em 0;
   width: 100%;
-}
-.input {
-  background: #fff;
-  overflow: hidden;
-  padding: 0.25em 0;
 }
 .input::after {
   content: '';
@@ -659,11 +676,12 @@ tbody {
 }
 textarea {
   width: calc(100% - 10px);
-  margin-bottom: 10px;
   border: none;
   height: 85px;
   padding: 10px;
   resize: none;
+  color: #404040;
+  font-size: 14px;
 }
 .modal__check {
   display: none;
