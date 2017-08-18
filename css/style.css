@@ -31,7 +31,6 @@ use.ic-1 {
   width: 151px;
 }
 
-
 .header-logo {
   background: #000;
   width: 189px;
@@ -40,6 +39,11 @@ use.ic-1 {
   box-sizing: border-box;
   position: relative;
   top: -130px;
+}
+
+.logo {
+  float: left;
+  margin-right: 20px;
 }
 
 .telephone {
@@ -59,6 +63,7 @@ use.ic-1 {
 
 /* Первый слайд */
 .header-container {
+  height: 830px;
   background: url("../img/main.png");
   background-size: cover;
 }
@@ -110,7 +115,8 @@ use.ic-1 {
 .main-container h1 {
   font-family: BebasNeueRegular;
   font-size: 48px;
-  color: #AC353C;
+  color: #ac353c;
+  margin-top: 12px;
   letter-spacing: 2.18px;
 }
 
@@ -206,6 +212,8 @@ use.ic-1 {
 .spheres-item img {
   object-fit: cover;
   transition: all 0.4s;
+  min-width: 100%;
+  min-height: 100%;
 }
 .spheres-item img:hover {
   transform: scale(1.2);
@@ -317,6 +325,8 @@ use.ic-1 {
 .map-info__mail,
 .map-info__address {
   position: relative;
+  position: relative;
+  padding-bottom: 30px;
 }
 .map-info__phone a,
 .map-info__mail a {
@@ -334,12 +344,30 @@ use.ic-1 {
 }
 .map-info__phone::before {
   content: '';
-  background: url("../img/phone.png");
-  width: 30px;
-  height: 30px;
+  background: url("../img/ico-phone.svg");
+  width: 35px;
+  height: 35px;
   position: absolute;
-  top: 10px;
-  left: -30px;
+  top: -2px;
+  left: -50px;
+}
+.map-info__mail::before {
+  content: '';
+  background: url("../img/ico-mail.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -2px;
+  left: -50px;
+}
+.map-info__address::before {
+  content: '';
+  background: url("../img/ico-address.svg");
+  width: 30px;
+  height: 43px;
+  position: absolute;
+  top: -10px;
+  left: -50px;
 }
 .contactform {
   font-size: 18px;
