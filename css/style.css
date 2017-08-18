@@ -321,17 +321,20 @@ use.ic-1 {
   color: #404040;
   letter-spacing: 1.64px;
 }
-.map-info__phone {
-  font-family: Roboto-Bold;
-  font-size: 24px;
-  color: #ad353c;
-  letter-spacing: 0.27px;
+.map-info__phone,
+.map-info__mail,
+.map-info__address {
+  position: relative;
+  position: relative;
+  padding-bottom: 30px;
 }
-.map-info__mail {
+.map-info__phone a,
+.map-info__mail a {
   font-family: Roboto-Bold;
   font-size: 24px;
   color: #ad353c;
   letter-spacing: 0.27px;
+  text-decoration: none;
 }
 .map-info__address {
   font-family: Roboto-Regular;
@@ -339,7 +342,33 @@ use.ic-1 {
   color: #ad353c;
   letter-spacing: 0.22px;
 }
-
+.map-info__phone::before {
+  content: '';
+  background: url("../img/ico-phone.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -2px;
+  left: -50px;
+}
+.map-info__mail::before {
+  content: '';
+  background: url("../img/ico-mail.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -2px;
+  left: -50px;
+}
+.map-info__address::before {
+  content: '';
+  background: url("../img/ico-address.svg");
+  width: 30px;
+  height: 43px;
+  position: absolute;
+  top: -10px;
+  left: -50px;
+}
 .contactform {
   font-size: 18px;
   display: none;
