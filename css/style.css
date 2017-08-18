@@ -47,7 +47,7 @@ use.ic-1 {
 }
 
 .telephone {
-  font-family: Roboto-Regular;
+  font-family: Roboto Condensed;
   font-size: 24px;
   color: #ffffff;
   letter-spacing: 0.27px;
@@ -113,18 +113,25 @@ use.ic-1 {
 }
 
 .main-container h1 {
-  font-family: BebasNeueRegular;
+  font-family: 'Roboto Condensed';
   font-size: 48px;
+  font-weight: 400;
   color: #ac353c;
   margin-top: 12px;
-  letter-spacing: 2.18px;
+  letter-spacing: 0.18px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
 }
 
 .main-container h2 {
-  font-family: BebasNeueRegular;
   font-size: 23px;
+  font-family: 'Roboto Condensed';
   color: #404040;
   letter-spacing: 1.05px;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 100;
+  margin-bottom: 25px;
 }
 
 /* Инфо */
@@ -167,7 +174,7 @@ use.ic-1 {
   vertical-align: top;
 }
 .info_item {
-  font-family: Roboto-Regular;
+  font-family: Roboto Condensed;
   text-transform: uppercase;
 }
 .info p {
@@ -175,7 +182,7 @@ use.ic-1 {
 }
 .subtext {
   margin-top: 30px;
-  font-family: Roboto-Regular;
+  font-family: Roboto Condensed;
   font-size: 18px;
   color: #9ca2a4;
   letter-spacing: 0.82px;
@@ -220,6 +227,7 @@ use.ic-1 {
 }
 .whies {
   font-size: 0;
+  padding-bottom: 60px;
 }
 .whies-item {
   display: inline-block;
@@ -306,6 +314,7 @@ use.ic-1 {
 }
 .contacts-table__left {
   width: calc(100% - 450px);
+  padding-right: 25px;
 }
 
 .contacts-table__right {
@@ -317,27 +326,29 @@ use.ic-1 {
 
 .map-info__title {
   font-family: BebasNeueRegular;
-  font-size: 36px;
+  font-size: 31px;
   color: #404040;
   letter-spacing: 1.64px;
+  font-weight: 400;
 }
 .map-info__phone,
 .map-info__mail,
 .map-info__address {
   position: relative;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-left: 50px;
 }
 .map-info__phone a,
 .map-info__mail a {
-  font-family: Roboto-Bold;
+  font-family: 'Roboto Condensed';
   font-size: 24px;
   color: #ad353c;
   letter-spacing: 0.27px;
   text-decoration: none;
 }
 .map-info__address {
-  font-family: Roboto-Regular;
+  font-family: Roboto Condensed;
   font-size: 20px;
   color: #ad353c;
   letter-spacing: 0.22px;
@@ -348,8 +359,8 @@ use.ic-1 {
   width: 35px;
   height: 35px;
   position: absolute;
-  top: -2px;
-  left: -50px;
+  top: 0;
+  left: 0;
 }
 .map-info__mail::before {
   content: '';
@@ -357,8 +368,8 @@ use.ic-1 {
   width: 35px;
   height: 35px;
   position: absolute;
-  top: -2px;
-  left: -50px;
+  top: 0;
+  left: 0;
 }
 .map-info__address::before {
   content: '';
@@ -366,8 +377,11 @@ use.ic-1 {
   width: 30px;
   height: 43px;
   position: absolute;
-  top: -10px;
-  left: -50px;
+  top: 0;
+  left: 0;
+}
+tbody {
+  vertical-align: top;
 }
 .contactform {
   font-size: 18px;
@@ -390,6 +404,7 @@ use.ic-1 {
   margin-bottom: 5px;
   width: calc(100% - 10px);
   vertical-align: top;
+  border-bottom: 2px solid #ad353c;
 }
 .input__field {
   position: relative;
