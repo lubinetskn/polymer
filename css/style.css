@@ -31,10 +31,6 @@ use.ic-1 {
   width: 151px;
 }
 
-.main-container {
-  height: 830px;
-}
-
 .header-logo {
   background: #000;
   width: 189px;
@@ -43,6 +39,11 @@ use.ic-1 {
   box-sizing: border-box;
   position: relative;
   top: -130px;
+}
+
+.logo {
+  float: left;
+  margin-right: 20px;
 }
 
 .telephone {
@@ -62,7 +63,7 @@ use.ic-1 {
 
 /* Первый слайд */
 .header-container {
-  height: 831px;
+  height: 830px;
   background: url("../img/main.png");
   background-size: cover;
 }
@@ -114,7 +115,8 @@ use.ic-1 {
 .main-container h1 {
   font-family: BebasNeueRegular;
   font-size: 48px;
-  color: #AC353C;
+  color: #ac353c;
+  margin-top: 12px;
   letter-spacing: 2.18px;
 }
 
@@ -210,6 +212,8 @@ use.ic-1 {
 .spheres-item img {
   object-fit: cover;
   transition: all 0.4s;
+  min-width: 100%;
+  min-height: 100%;
 }
 .spheres-item img:hover {
   transform: scale(1.2);
