@@ -101,9 +101,9 @@ img {
 
 .main-container h1 {
   font-family: BebasNeueRegular;
-  font-size: 50px;
-  color: #ac353c;
-  letter-spacing: 2.27px;
+  font-size: 48px;
+  color: #AC353C;
+  letter-spacing: 2.18px;
 }
 
 .main-container h2 {
@@ -198,13 +198,31 @@ img {
 .spheres-item img {
   object-fit: cover;
 }
+.whies {
+  font-size: 0;
+}
+.whies-item {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
 .whies-item img {
   height: 145px;
 }
-.why__pictures img {
-  height: 95px;
+.why__pictures {
+  padding-top: 15px;
 }
-
+.why__pictures img {
+  margin-right: 15px;
+  vertical-align: baseline;
+  filter: grayscale(40%);
+}
+.whies-title {
+  font-family: BebasNeueRegular;
+  font-size: 23px;
+  letter-spacing: 1.05px;
+  padding-top: 25px;
+}
 .back-grey {
   background-color: #9ca2a4;
 }
@@ -221,6 +239,7 @@ img {
 }
 .galery .galery-item img {
   object-fit: cover;
+  cursor: pointer;
 }
 
 .slick-track {
