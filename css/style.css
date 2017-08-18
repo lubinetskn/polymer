@@ -150,8 +150,7 @@ use.ic-1 {
 .column {
   display: inline-block;
   text-align: center;
-  width: 190px;
-  margin-right: 40px;
+  width: 180px;
 }
 .column__firstcell {
   font-family: BebasNeueRegular;
@@ -179,9 +178,19 @@ use.ic-1 {
   padding: 4px 0;
   text-transform: uppercase;
 }
+.table-info {
+  float: left;
+  margin-right: 40px;
+}
+.table-info__middle {
+  font-size: 66px;
+  color: #ac353c;
+  padding: 90px 10px 0;
+  text-transform: uppercase;
+}
 .info {
   display: inline-block;
-  width: 500px;
+  width: 515px;
   vertical-align: top;
 }
 .info_item {
@@ -263,7 +272,7 @@ use.ic-1 {
   padding-top: 25px;
 }
 .back-grey {
-  background-color: #9ca2a4;
+  background-color: rgba(156, 162, 164, .7);
 }
 
 /* Галерея */
@@ -316,10 +325,9 @@ use.ic-1 {
 }
 .galery .galery-item,
 .galery .slick-slide:focus {
-  transition: all 0.3s;
   outline: none !important;
 }
-
+.galery .galery-item img,
 .galery .slick-slide {
   transition: all 0.3s;
 }
@@ -355,13 +363,12 @@ use.ic-1 {
 .contacts-table__left {
   width: calc(100% - 450px);
   padding-right: 25px;
+  border-right: 1px solid #979797;
 }
 
 .contacts-table__right {
   width: 450px;
   padding-left: 30px;
-
-  border-left: 1px solid #979797;
 }
 
 .map-info__title {
