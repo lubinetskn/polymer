@@ -134,13 +134,13 @@ use.ic-1 {
   margin-bottom: 25px;
 }
 .main-container__logo {
-  display:inline-block;
-  width:380px;
+  display: inline-block;
+  width: 380px;
 }
 .main-container__info {
   font-family: Roboto Condensed;
   font-size: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0.95px;
   display: inline-block;
   width: 630px;
@@ -721,4 +721,7 @@ textarea {
 .modal__check:checked + label:before {
   background: #696969;
   border: 5px solid #fff;
+}
+#map {
+  height: 300px;
 }
