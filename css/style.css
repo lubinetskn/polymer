@@ -273,7 +273,6 @@ use.ic-1 {
   margin-right: 15px;
   vertical-align: baseline;
   filter: grayscale(40%);
-  cursor: pointer;
 }
 .why__pictures img:hover{
   filter: grayscale(0);
@@ -404,7 +403,6 @@ use.ic-1 {
 .map-info__phone,
 .map-info__mail,
 .map-info__address {
-  position: relative;
   position: relative;
   padding-bottom: 20px;
   padding-left: 50px;
