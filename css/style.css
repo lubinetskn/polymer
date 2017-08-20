@@ -86,7 +86,7 @@ use.ic-1 {
   min-width: 189px;
   text-align: center;
   padding: 10px;
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: none;
   text-align: center;
   background: rgba(224, 171, 43, .8);
@@ -95,7 +95,6 @@ use.ic-1 {
 }
 .title--red {
   max-width: 824px;
-
 
   position: relative;
   z-index: 2;
@@ -146,12 +145,12 @@ use.ic-1 {
   color: #ffffff;
   letter-spacing: 0.95px;
 
-    display: inline-block;
-    width: calc(100% - 440px);
+  display: inline-block;
+  width: calc(100% - 440px);
   padding-left: 30px;
 }
 
-#experience{
+#experience {
   padding: 0 0 60px;
 }
 .column {
@@ -194,7 +193,7 @@ use.ic-1 {
   font-size: 66px;
   color: #ac353c;
   padding-top: 90px;
-  width:100px;
+  width: 100px;
   text-transform: uppercase;
 }
 .info {
@@ -274,7 +273,7 @@ use.ic-1 {
   vertical-align: baseline;
   filter: grayscale(40%);
 }
-.why__pictures img:hover{
+.why__pictures img:hover {
   filter: grayscale(0);
 }
 .whies-title {
@@ -368,13 +367,13 @@ use.ic-1 {
 }
 
 .map-info {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .map-info__col {
-    min-height: 270px;
+  min-height: 270px;
 }
 
 .contacts-table__right,
