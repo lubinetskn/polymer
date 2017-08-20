@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -80,34 +81,27 @@
             </svg>
             <h1>Полимочевина СпецИзол</h1>
             <h2>покупая качество на долгие годы</h2>
-            <table class="table-info">
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="column">
-                                <div class="column__firstcell">
-                                    <div>32</div>руб
-                                </div>
-                                <div class="column__secondcell">
-                                    за м2
-                                </div>
-                            </div>
-                        </td>
-                        <td class="table-info__middle">за</td>
-                        <td>
-                            <div class="column">
-                                <div class="column__firstcell">
-                                    <div>30</div>лет
-                                </div>
-                                <div class="column__secondcell">
-                                    Срок службы
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="column__wrapper">
+            <div class="column">
+                <div class="column__firstcell">
+                    <div>32</div>руб
+                </div>
+                <div class="column__secondcell">
+                    за м2
+                </div>
+            </div>
 
+            <div class="column column--middle">за</div>
+            
+            <div class="column">
+                <div class="column__firstcell">
+                    <div>30</div>лет
+                </div>
+                <div class="column__secondcell">
+                    Срок службы
+                </div>
+            </div>
+            </div>
             <div class="info">
                 <p>Опыт, понимание технических процессов и знания, накопленные компанией в индустрии производства защитных материалов
                     для нефтегазовой отрасли позволили реализовать производство собственной линейки материалов для нужд профессионалов
@@ -272,30 +266,24 @@
                     </svg>
                     <h1>Наши контакты</h1>
                     <h2>Свяжитесь с нами</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <div class="map-info">
-                                    <h3 class="map-info__title">ЦЕНТРАЛЬНЫЙ ОФИС</h3>
-                                    <div class="map-info__phone"><a href="tel:+7495">+7(495)786-67-11</a></div>
-                                    <div class="map-info__mail"><a href="amilto:info@spolymer.pro">info@spolymer.pro</a></div>
-                                    <div class="map-info__address">г. Москва, ул. Тверская, д. 12, стр. 1, офис 24</div>
-                                </div>
-                            </td>
-                            <td style="padding-left: 30px;">
-                                <div class="map-info">
-                                    <h3 class="map-info__title">ПРОИЗВОДСТВО И СКЛАД</h3>
-                                    <div class="map-info__address">г. Долгопрудный, Лихачевский проезд, д. 5 Территория завода ОАО «ПО «ТОС»</div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><div class="btn">Показать на карте</div></td>
-                            <td style="padding-left: 30px;"><div class="btn">Показать на карте</div></td>
-                        </tr>
-                    </table>
+                  
+                    <div class="map-info">
+                        <div class="map-info__col">
+                            <h3 class="map-info__title">ЦЕНТРАЛЬНЫЙ ОФИС</h3>
+                            <div class="map-info__phone"><a href="tel:+7495">+7(495)786-67-11</a></div>
+                            <div class="map-info__mail"><a href="amilto:info@spolymer.pro">info@spolymer.pro</a></div>
+                            <div class="map-info__address">г. Москва, ул. Тверская, д. 12, стр. 1, офис 24</div>
+                        </div>
+                        <div class="btn">Показать на карте</div>
+                    </div>
 
-
+                    <div class="map-info">
+                        <div class="map-info__col">
+                            <h3 class="map-info__title">ПРОИЗВОДСТВО И СКЛАД</h3>
+                            <div class="map-info__address">г. Долгопрудный, Лихачевский проезд, д. 5 Территория завода ОАО «ПО «ТОС»</div>
+                        </div>
+                       <div class="btn">Показать на карте</div>
+                    </div>
                 </div>
                 <div class="contacts-table__right">
                     <h3 class="map-info__title">напишите нам</h3>

@@ -74,7 +74,7 @@ ymaps.ready(function() {
       {
         hintContent: 'Собственный значок метки с контентом',
         balloonContent: 'А эта — новогодняя',
-        iconContent: '12',
+      //  iconContent: '12',
       },
       {
         // Опции.

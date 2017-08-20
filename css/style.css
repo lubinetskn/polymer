@@ -94,7 +94,9 @@ use.ic-1 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
 }
 .title--red {
-  width: 824px;
+  max-width: 824px;
+
+
   position: relative;
   z-index: 2;
   background: rgba(149, 48, 48, .8);
@@ -155,6 +157,7 @@ use.ic-1 {
 .column {
   display: inline-block;
   text-align: center;
+  vertical-align: top;
   width: 180px;
 }
 .column__firstcell {
@@ -183,19 +186,20 @@ use.ic-1 {
   padding: 4px 0;
   text-transform: uppercase;
 }
-.table-info {
+.column__wrapper {
   float: left;
   margin-right: 40px;
 }
-.table-info__middle {
+.column--middle {
   font-size: 66px;
   color: #ac353c;
-  padding: 90px 10px 0;
+  padding-top: 90px;
+  width:100px;
   text-transform: uppercase;
 }
 .info {
   display: inline-block;
-  width: 515px;
+  max-width: 515px;
   vertical-align: top;
 }
 .info_item {
@@ -364,20 +368,30 @@ use.ic-1 {
   font-size: 0;
 }
 
+.map-info {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.map-info__col {
+    min-height: 270px;
+}
+
 .contacts-table__right,
 .contacts-table__left {
   display: inline-block;
   vertical-align: top;
 }
 .contacts-table__left {
-  width: calc(100% - 450px);
+  width: calc(100% - 400px);
   padding-right: 25px;
-  border-right: 1px solid #979797;
 }
 
 .contacts-table__right {
-  width: 450px;
+  width: 400px;
   padding-left: 30px;
+  border-left: 1px solid #979797;
 }
 
 .map-info__title {
