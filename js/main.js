@@ -29,10 +29,11 @@ $('.galery').slick({
 });
 
 
-$(".header-container nav").on("click","ul li a",function(event){
+$("body").on("click",".trans-link",function(event){
   event.preventDefault();
   var id=$(this).attr('href'),top=$(id).offset().top;
   $('body,html').animate({scrollTop:top-30},1500);
+});
 
 ymaps.ready(function() {
   var myMap = new ymaps.Map(
@@ -52,8 +53,8 @@ ymaps.ready(function() {
     myPlacemark = new ymaps.Placemark(
       myMap.getCenter(),
       {
-        hintContent: 'Собственный значок метки',
-        balloonContent: 'Это красивая метка',
+        hintContent: 'Производство и склад',
+        balloonContent: 'Производство и склад',
       },
       {
         // Опции.
@@ -71,9 +72,9 @@ ymaps.ready(function() {
     myPlacemarkWithContent = new ymaps.Placemark(
       [55.7634504, 37.6077992],
       {
-        hintContent: 'Собственный значок метки с контентом',
-        balloonContent: 'А эта — новогодняя',
-        iconContent: '12',
+        hintContent: 'Центральный офис',
+        balloonContent: 'Центральный офис',
+      //  iconContent: '12',
       },
       {
         // Опции.

@@ -1,0 +1,135 @@
+@media (max-width:1200px) {
+  .wrapper{
+      margin:0;
+      width:100%;
+          padding-top: 20px;
+  }
+    .header-container{
+        height: auto;
+    }
+    header,
+    .header-container nav{
+        display: none;
+    }
+    .main-container h1 {
+    font-size: 19px;
+    line-height: 1.2;
+    margin: 24px 0 3px;
+    padding-left: 15px;
+    }
+.main-container h2 {
+font-size: 12px;
+    line-height: 1.2;
+}
+.logo {
+    width: 59px;
+        margin: 0 10px;
+}
+    .info p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+.contacts-table__right{
+    width: auto;
+    padding: 30px;
+}
+
+.title--gray,
+.title--red {
+    line-height: 1.2;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+}
+.title--red {
+    margin-top: 30px;
+}
+.title--gray {
+    margin-bottom: 30px;
+}
+.telephone {
+    display: none;
+}
+.title--gray{
+    top:0;
+}
+.btn {
+    line-height: 1.2;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    margin-bottom: 20px;
+}
+.button {
+    text-align: center;
+}
+.subtext {
+    font-size: 12px;
+    letter-spacing: 0.55px;
+}
+.main-container__info {
+    font-size: 14px;
+    letter-spacing: 0.64px;
+    padding-left: 15px;
+}
+.main {
+    padding-bottom: 30px;
+}
+.whies-title {
+    font-size: 20px;
+    letter-spacing: 0.82px;
+    width: 80%;
+    margin: auto;
+}
+.why__pictures img {
+    margin: 0 0 50px 0;
+}
+.map-info__phone, 
+.map-info__mail, 
+.map-info__address {
+    padding-left: 71px;
+    text-align: left;
+}
+.map-info__phone::before,
+.map-info__mail::before,
+.map-info__address::before {
+     left: 25px;
+}
+.map-info__col {
+    min-height: 0;
+}
+.map-info__title {
+    margin: 0 0 30px 0;
+}
+.map-info {
+    margin: 40px 0;
+}
+.contacts-table__left {
+    padding-right: 0;
+}
+.column__wrapper{
+    float: none;
+    margin-right: 0;
+    padding: 20px 60px;
+}
+.why__pictures{
+    text-align: center
+}
+.contacts-table__right,
+.contacts-table__left,
+.map-info,
+.spheres-item,
+.main-container__info,
+.whies-item,
+.column{
+    width:100%;
+}
+.column--middle{
+    padding: 45px 0;
+}
+.contacts-table__right{
+    border:none
+}
+}
