@@ -39,7 +39,7 @@ use.ic-1 {
   box-sizing: border-box;
   position: relative;
   top: -135px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -48,7 +48,7 @@ use.ic-1 {
 }
 
 .telephone {
-  font-family: Roboto Condensed;
+  font-family: 'Roboto';
   font-size: 24px;
   color: #ffffff;
   letter-spacing: 0.27px;
@@ -70,18 +70,18 @@ use.ic-1 {
 }
 .title--gray,
 .title--red {
-  font-family: BebasNeueBold;
+  font-family: 'BebasNeueBold';
   font-size: 48px;
   color: #ffffff;
   letter-spacing: 0.53px;
   line-height: 53px;
   padding: 25px 30px 16px;
   display: block;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   opacity: 0;
 }
 .btn {
-  font-family: BebasNeueBold;
+  font-family: 'BebasNeueBold';
   font-size: 24px;
   color: #ffffff;
   border: none;
@@ -168,7 +168,7 @@ use.ic-1 {
   width: 190px;
 }
 .column__firstcell {
-  font-family: BebasNeueRegular;
+  font-family: 'BebasNeueRegular';
   font-size: 72px;
   color: #ac353c;
   letter-spacing: 3.27px;
@@ -177,7 +177,7 @@ use.ic-1 {
   padding: 29px 0;
 }
 .column__firstcell div {
-  font-family: BebasNeueRegular;
+  font-family: 'BebasNeueRegular';
   font-size: 144px;
   color: #ac353c;
   letter-spacing: 6.55px;
@@ -204,7 +204,7 @@ use.ic-1 {
   padding-top: 90px;
   width: 100px;
   text-transform: uppercase;
-  font-family: BebasNeueRegular;
+  font-family: 'BebasNeueRegular';
 }
 .info {
   display: inline-block;
@@ -213,7 +213,7 @@ use.ic-1 {
   margin-top: 25px;
 }
 .info_item {
-  font-family: Roboto Condensed;
+  font-family: 'Roboto';
   text-transform: uppercase;
 }
 .info p {
@@ -230,7 +230,9 @@ use.ic-1 {
   line-height: 19px;
   color: #9ca2a4;
 }
-.main svg, .main h1, .main h2 {
+.main svg,
+.main h1,
+.main h2 {
   margin-left: -19px;
 }
 
@@ -277,7 +279,6 @@ use.ic-1 {
   font-size: 0;
   padding-bottom: 60px;
   margin-top: 50px;
-
 }
 .whies-item {
   display: inline-block;
@@ -447,7 +448,7 @@ use.ic-1 {
   font-weight: bold;
 }
 .map-info__address {
-  font-family: Roboto Condensed;
+  font-family: 'Roboto';
   font-size: 20px;
   color: #ad353c;
   letter-spacing: 0.22px;
@@ -491,7 +492,6 @@ tbody {
 }
 .modal__form {
   font-size: 12px;
-  overflow-y: hidden;
   -webkit-transition: .8s;
   transition: .8s;
   padding-bottom: 10px;
