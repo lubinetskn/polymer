@@ -93,6 +93,7 @@ ymaps.ready(function() {
         iconContentLayout: MyIconContentLayout,
       },
     );
+  
 
   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
 
