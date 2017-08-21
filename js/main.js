@@ -28,11 +28,11 @@ $('.galery').slick({
   ],
 });
 
-
-$("body").on("click",".trans-link",function(event){
+$('body').on('click', '.trans-link', function(event) {
   event.preventDefault();
-  var id=$(this).attr('href'),top=$(id).offset().top;
-  $('body,html').animate({scrollTop:top-30},1500);
+  var id = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({ scrollTop: top - 30 }, 1500);
 });
 
 ymaps.ready(function() {
@@ -74,7 +74,7 @@ ymaps.ready(function() {
       {
         hintContent: 'Центральный офис',
         balloonContent: 'Центральный офис',
-      //  iconContent: '12',
+        //  iconContent: '12',
       },
       {
         // Опции.
@@ -95,11 +95,16 @@ ymaps.ready(function() {
     );
 
   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+});
 
+$('.input__field').focusout(function() {
+  if ($(this).val() != '') {
+    $(this).parent().addClass('input--filled');
+  }
 });
 
 $(document).ready(function() {
-    $('.title--red').addClass('animated fadeInLeftBig');
-    $('.title--gray').addClass('animated fadeInRightBig');
-    $('.btn').addClass('animated fadeIn');
+  $('.title--red').addClass('animated fadeInLeftBig');
+  $('.title--gray').addClass('animated fadeInRightBig');
+  $('.btn').addClass('animated fadeIn');
 });
