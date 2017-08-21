@@ -38,7 +38,8 @@ use.ic-1 {
   padding: 40px 24px 10px;
   box-sizing: border-box;
   position: relative;
-  top: -130px;
+  top: -135px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -74,8 +75,10 @@ use.ic-1 {
   color: #ffffff;
   letter-spacing: 0.53px;
   line-height: 53px;
-  padding: 25px 30px;
+  padding: 25px 30px 16px;
   display: block;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  opacity: 0;
 }
 .btn {
   font-family: BebasNeueBold;
@@ -85,26 +88,31 @@ use.ic-1 {
   letter-spacing: 0.27px;
   min-width: 189px;
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 7px;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   background: rgba(224, 171, 43, .8);
   display: inline-block;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+  transition: .8s;
+  opacity: 0;
+}
+.btn:hover {
+  background: rgba(224, 171, 43, 1);
 }
 .title--red {
   max-width: 824px;
 
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background: rgba(149, 48, 48, .8);
 }
 .title--gray {
   width: 635px;
   margin: 0 0 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   top: -16px;
   background: rgba(156, 162, 164, .8);
 }
@@ -115,19 +123,19 @@ use.ic-1 {
 }
 
 .main-container h1 {
-  font-family: 'Roboto Condensed';
-  font-size: 48px;
+  font-family: 'BebasNeueRegular';
+  font-size: 50px;
   font-weight: 400;
   color: #ac353c;
-  margin-top: 12px;
+  margin-top: 18px;
   letter-spacing: 0.18px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .main-container h2 {
   font-size: 23px;
-  font-family: 'Roboto Condensed';
+  font-family: 'BebasNeueRegular';
   color: #404040;
   letter-spacing: 1.05px;
   text-transform: uppercase;
@@ -140,11 +148,11 @@ use.ic-1 {
   width: 435px;
 }
 .main-container__info {
-  font-family: Roboto Condensed;
+  font-family: "Roboto";
   font-size: 21px;
   color: #ffffff;
   letter-spacing: 0.95px;
-
+  line-height: 24px;
   display: inline-block;
   width: calc(100% - 440px);
   padding-left: 30px;
@@ -157,7 +165,7 @@ use.ic-1 {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 180px;
+  width: 190px;
 }
 .column__firstcell {
   font-family: BebasNeueRegular;
@@ -165,7 +173,7 @@ use.ic-1 {
   color: #ac353c;
   letter-spacing: 3.27px;
   line-height: 1;
-  border: 5px solid;
+  border: 4px solid;
   padding: 29px 0;
 }
 .column__firstcell div {
@@ -180,14 +188,15 @@ use.ic-1 {
   font-size: 20px;
   color: #404040;
   letter-spacing: 0.91px;
-  border: 5px solid #404040;
+  border: 4px solid #404040;
   border-top: none;
   padding: 4px 0;
   text-transform: uppercase;
 }
 .column__wrapper {
   float: left;
-  margin-right: 40px;
+  margin-right: 70px;
+  margin-top: 25px;
 }
 .column--middle {
   font-size: 66px;
@@ -195,25 +204,34 @@ use.ic-1 {
   padding-top: 90px;
   width: 100px;
   text-transform: uppercase;
+  font-family: BebasNeueRegular;
 }
 .info {
   display: inline-block;
-  max-width: 515px;
+  max-width: 635px;
   vertical-align: top;
+  margin-top: 25px;
 }
 .info_item {
   font-family: Roboto Condensed;
   text-transform: uppercase;
 }
 .info p {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Roboto";
 }
 .subtext {
-  margin-top: 30px;
-  font-family: Roboto Condensed;
-  font-size: 18px;
+  margin-top: 80px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
   color: #9ca2a4;
-  letter-spacing: 0.82px;
+}
+.main svg, .main h1, .main h2 {
+  margin-left: -19px;
 }
 
 /* Технология */
@@ -221,6 +239,7 @@ use.ic-1 {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-top: -25px;
 }
 .spheres-item {
   height: 203px;
@@ -235,7 +254,7 @@ use.ic-1 {
 .spheres-title {
   background: rgba(172, 53, 60, 0.80);
   font-family: BebasNeueRegular;
-  font-size: 12px;
+  font-size: 16px;
   color: #ffffff;
   letter-spacing: 0.95px;
   line-height: 50px;
@@ -243,6 +262,7 @@ use.ic-1 {
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding-top: 3px;
 }
 .spheres-item img {
   object-fit: cover;
@@ -256,29 +276,37 @@ use.ic-1 {
 .whies {
   font-size: 0;
   padding-bottom: 60px;
+  margin-top: 50px;
+
 }
 .whies-item {
   display: inline-block;
-  width: 25%;
+  width: 20%;
   text-align: center;
+  margin-right: 6%;
+}
+.whies-item:last-of-type {
+  margin-right: 0;
 }
 .whies-item img {
   height: 145px;
 }
 .why__pictures {
   padding-top: 15px;
+  margin-bottom: 30px;
 }
 .why__pictures img {
-  margin-right: 15px;
+  margin-right: 50px;
   vertical-align: baseline;
-  filter: grayscale(40%);
+  filter: grayscale(70%);
+  transition: .8s;
 }
 .why__pictures img:hover {
   filter: grayscale(0);
 }
 .whies-title {
   font-family: BebasNeueRegular;
-  font-size: 23px;
+  font-size: 21px;
   letter-spacing: 1.05px;
   padding-top: 25px;
 }
@@ -374,6 +402,7 @@ use.ic-1 {
 
 .map-info__col {
   min-height: 270px;
+  padding-right: 50px;
 }
 
 .contacts-table__right,
@@ -408,11 +437,14 @@ use.ic-1 {
 }
 .map-info__phone a,
 .map-info__mail a {
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto';
   font-size: 24px;
   color: #ad353c;
   letter-spacing: 0.27px;
   text-decoration: none;
+}
+.map-info__phone a {
+  font-weight: bold;
 }
 .map-info__address {
   font-family: Roboto Condensed;
@@ -427,7 +459,7 @@ use.ic-1 {
   height: 35px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -3px;
 }
 .map-info__mail::before {
   content: '';
@@ -445,7 +477,7 @@ use.ic-1 {
   height: 43px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2px;
 }
 tbody {
   vertical-align: top;
@@ -458,11 +490,12 @@ tbody {
   margin-top: 30px;
 }
 .modal__form {
-  padding-top: 30px;
   font-size: 12px;
   overflow-y: hidden;
   -webkit-transition: .8s;
   transition: .8s;
+  padding-bottom: 10px;
+  font-family: "Roboto";
 }
 
 .input {
@@ -550,7 +583,7 @@ textarea:focus {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 21.4px 12.5px;
+  padding: 23.4px 12.5px;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
@@ -704,7 +737,7 @@ textarea:focus {
 textarea {
   width: calc(100% - 10px);
   border: none;
-  height: 85px;
+  height: 155px;
   padding: 10px;
   resize: none;
   color: #404040;
@@ -743,5 +776,5 @@ textarea {
   border: 5px solid #fff;
 }
 #map {
-  height: 300px;
+  height: 700px;
 }

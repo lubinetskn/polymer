@@ -39,8 +39,8 @@ ymaps.ready(function() {
   var myMap = new ymaps.Map(
       'map',
       {
-        center: [55.9211652, 37.5270341],
-        zoom: 9,
+        center: [55.8211652, 37.5670341],
+        zoom: 11,
       },
       {
         searchControlProvider: 'yandex#search',
@@ -51,7 +51,7 @@ ymaps.ready(function() {
       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>',
     ),
     myPlacemark = new ymaps.Placemark(
-      myMap.getCenter(),
+      [55.9211652, 37.5270341],
       {
         hintContent: 'Производство и склад',
         balloonContent: 'Производство и склад',
@@ -96,4 +96,10 @@ ymaps.ready(function() {
 
   myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
 
+});
+
+$(document).ready(function() {
+    $('.title--red').addClass('animated fadeInLeftBig');
+    $('.title--gray').addClass('animated fadeInRightBig');
+    $('.btn').addClass('animated fadeIn');
 });
