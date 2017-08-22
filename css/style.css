@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
 @font-face {
 	font-family: 'BebasNeueRegular';
 	src: url('../fonts/BebasNeueRegular.eot');
@@ -274,6 +274,7 @@ use.ic-1 {
   text-align: center;
   position: absolute;
   bottom: 0;
+  z-index:1;
   width: 100%;
   padding-top: 3px;
 }
