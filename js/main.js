@@ -41,6 +41,7 @@ ymaps.ready(function() {
       {
         center: [55.8211652, 37.5670341],
         zoom: 11,
+		controls:[]
       },
       {
         searchControlProvider: 'yandex#search',
