@@ -40,7 +40,7 @@ ymaps.ready(function() {
       'map',
       {
         center: [55.8211652, 37.5670341],
-        zoom: 11,
+        zoom: 9,
 		controls:[]
       },
       {
