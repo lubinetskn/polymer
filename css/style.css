@@ -249,16 +249,14 @@ use.ic-1 {
 
 /* Технология */
 .spheres {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
   margin-top: -25px;
+    font-size: 0;
 }
 .spheres-item {
   height: 203px;
-  flex-grow: 1;
   width: 33%;
-  display: flex;
+  display:inline-block;
+    vertical-align: top;
   overflow: hidden;
   position: relative;
 }
@@ -328,37 +326,7 @@ use.ic-1 {
 }
 
 /* Галерея */
-/*
-.galery .slick-track {
-  transition: all 0.4s;
-}
-.galery .galery-item {
-  width: 480px;
-  height: 320px;
-  display: flex;
-  transition: all 0.3s;
-  opacity: 0.4;
-  position: relative;
-  margin-top: 10px;
-  width: 100%;
-}
 
-.galery  .slick-active.slick-center .galery-item {
-
-  display: flex;
-  opacity: 1;
-  margin-top: 0;
-}
-
-
-.slick-track {
-  height: 500px;
-}
-
-.galery .slick-slide.slick-active:focus {
-  outline: none;
-}
-*/
 .galery .galery-item {
   position: relative;
   height: 346px;
@@ -366,7 +334,6 @@ use.ic-1 {
   margin: 10px 0 20px;
   overflow: hidden;
   transition: all 0.3s;
-  display: flex;
 }
 
 .galery  .slick-active.slick-center .galery-item {
