@@ -106,6 +106,7 @@ $('.input__field').focusout(function() {
 $(document).ready(function() {
   $('.title--red').addClass('animated fadeInLeftBig');
   $('.title--gray').addClass('animated fadeInRightBig');
+
   setTimeout(function() {
         $('#home .btn').addClass('animated fadeIn');
     }, 1000);
@@ -131,4 +132,7 @@ $(window).scroll(function () {
 }
   products = 1;
   }
+
+  $('.btn').addClass('animated fadeIn');
+
 });
