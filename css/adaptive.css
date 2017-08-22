@@ -136,8 +136,8 @@
   .whies-item {
     margin-right: 0;
   }
-  .main svg, .main h1, .main h2{
-	margin-left:0;
+  .main svg{
+	margin-left:13px;
   }
   .spheres{
 	margin-top:0;
