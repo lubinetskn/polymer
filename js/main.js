@@ -42,10 +42,7 @@ ymaps.ready(function() {
         center: [55.8211652, 37.5670341],
         zoom: 9,
 		controls:[],
-      },
-      {
-        searchControlProvider: 'yandex#search',
-      },
+      }
     ),
     // Создаём макет содержимого.
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
