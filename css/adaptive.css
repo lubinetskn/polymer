@@ -133,4 +133,7 @@
   .contacts-table__right {
     border: none;
   }
+  .whies-item {
+    margin-right: 0;
+  }
 }
