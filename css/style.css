@@ -25,6 +25,9 @@
   font-weight: bold;
   font-style: normal;
 }
+.hidden-desktop {
+  display: none;
+}
 img {
   max-width: 100%;
 }

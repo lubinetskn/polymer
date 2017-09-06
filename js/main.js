@@ -41,12 +41,12 @@ $('.galery').slick({
   focusOnSelect: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1000,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3,
+        centerPadding: '40',
+        slidesToShow: 1,
       },
     },
     {
