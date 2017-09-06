@@ -10,7 +10,9 @@ height:auto;
     padding-top: 20px;
   }
   .header-container {
-    height: auto;
+    background: url(../img/main_m.jpg);
+    background-size: cover;
+    height: 365px;
   }
   header,
   .header-container nav {
@@ -41,7 +43,6 @@ height:auto;
     width: auto;
     padding: 15px;
   }
-
   .title--gray,
   .title--red {
     line-height: 1.2;
@@ -52,7 +53,7 @@ height:auto;
     text-align: center;
   }
   .title--red {
-    margin-top: 30px;
+    margin-top: 120px;
   }
   .title--gray {
     margin-bottom: 30px;
