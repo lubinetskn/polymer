@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 html {
   color: #222;
   font-size: 1em;
@@ -52,7 +53,9 @@ textarea {
 /* ===== Initializr Styles ====== */
 
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font-family:'Roboto', Arial, Helvetica;
+  font-size: 16px;
+  line-height:26px;
 }
 
 .wrapper {

@@ -1,3 +1,36 @@
+document.getElementById('contactform').addEventListener(
+  'submit',
+  function(evt) {
+    var http = new XMLHttpRequest(),
+      f = this;
+    evt.preventDefault();
+    http.open('POST', 'contacts.php', true);
+    http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    http.send(
+      'clientname=' +
+        f.clientname.value +
+        '&clientemail=' +
+        f.clientemail.value +
+        '&clientphone=' +
+        f.clientphone.value +
+        '&clientmessage=' +
+        f.clientmessage.value,
+    );
+    http.onreadystatechange = function() {
+      if (http.readyState == 4 && http.status == 200) {
+        $('.poppup').addClass('poppup--active');
+        $('#contactform').trigger('reset');
+        f.clientmessage.removeAttribute('value');
+        f.clientmessage.value = '';
+      }
+    };
+    http.onerror = function() {
+      console.log('ошибка отправки');
+    };
+  },
+  false,
+);
+
 $('.galery').slick({
   centerMode: true,
   centerPadding: '60px',
@@ -36,16 +69,11 @@ $('body').on('click', '.trans-link', function(event) {
 });
 
 ymaps.ready(function() {
-  var myMap = new ymaps.Map(
-      'map',
-      {
-        center: [55.8211652, 37.5670341],
-        zoom: 11,
-      },
-      {
-        searchControlProvider: 'yandex#search',
-      },
-    ),
+  var myMap = new ymaps.Map('map', {
+      center: [55.8211652, 37.5670341],
+      zoom: 9,
+      controls: [],
+    }),
     // Создаём макет содержимого.
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
       '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>',
@@ -99,7 +127,9 @@ ymaps.ready(function() {
 
 $('.input__field').focusout(function() {
   if ($(this).val() != '') {
-    $(this).parent().addClass('input--filled');
+    $(this)
+      .parent()
+      .addClass('input--filled');
   }
 });
 
@@ -108,31 +138,36 @@ $(document).ready(function() {
   $('.title--gray').addClass('animated fadeInRightBig');
 
   setTimeout(function() {
-        $('#home .btn').addClass('animated fadeIn');
-    }, 1000);
+    $('#home .btn').addClass('animated fadeIn');
+  }, 1000);
 });
+
 var products = 0;
-$(window).scroll(function () {
+$(window).scroll(function() {
   if ($(document).scrollTop() > 10) {
     if (products != 1) {
-    $('.counter').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 2000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-  });
-  setTimeout(function() {
+      $('.counter').each(function() {
+        $(this)
+          .prop('Counter', 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 2000,
+              easing: 'swing',
+              step: function(now) {
+                $(this).text(Math.ceil(now));
+              },
+            },
+          );
+      });
+      setTimeout(function() {
         $('#products .btn').addClass('animated fadeIn');
-    }, 1800);
-}
-  products = 1;
+      }, 1800);
+    }
+    products = 1;
   }
 
   $('.btn').addClass('animated fadeIn');
-
 });
