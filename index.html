@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
 
 
     <link rel="stylesheet" href="css/main.css">
@@ -41,20 +42,20 @@
         </symbol>
     </svg>
     <div class="header-mobile hidden-desktop">
-      <div class="header-mobile__logo">
-        <a href="/"><img src="./img/mlogo.png" /></a>
-      </div>
-      <input type="checkbox" id="burger-check" />
-      <label for="burger-check" class="header-mobile__burger">
+        <div class="header-mobile__logo">
+            <a href="/"><img src="./img/mlogo.png" /></a>
+        </div>
+        <input type="checkbox" id="burger-check" />
+        <label for="burger-check" class="header-mobile__burger">
         <span></span>
       </label>
-      <nav class="mobile-menu">
-        <a href="#products">Продукция</a>
-        <a href="#technology">Технология</a>
-        <a href="#why-we">Правильный выбор</a>
-        <a href="#experience">Опыт</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
+        <nav class="mobile-menu">
+            <a href="#products">Продукция</a>
+            <a href="#technology">Технология</a>
+            <a href="#why-we">Правильный выбор</a>
+            <a href="#experience">Опыт</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
     </div>
     <div class="header-container">
         <h1 class="telephone">
@@ -264,7 +265,7 @@
         <div class="galery">
             <div>
                 <div class="galery-item" style="background-image:url(./img/gallery_1.jpg)">
-                    
+
                     <div class="galery-title">Адгезионные испытания полимочевины</div>
                 </div>
             </div>
@@ -472,7 +473,7 @@
                     </form>
 
 
-                    <form class="modal__form button" id="modal__form">
+                    <form class="modal__form" id="modal__form" method="POST">
                         <span class="input">
                     <input class="input__field" type="text" name="clientname" id="clientname">
                     <label class="input__label" for="clientname">
@@ -497,8 +498,6 @@
                         <span class="border">
                             <textarea name="clientmessage" placeholder="" required="" rows="6"></textarea>
                         </span>
-                        <input type="hidden" id="clientflat" name="clientflat">
-                        <input type="hidden" id="clientkorpus" name="clientkorpus">
                         <input type="submit" class="btn" value="Отправить сообщение">
 
                     </form>

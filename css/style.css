@@ -277,7 +277,7 @@ use.ic-1 {
   position: absolute;
   bottom: 0;
   z-index: 1;
-  width: 100%;   
+  width: 100%;
   padding: 13px 0 11px;
 }
 .spheres-title {
@@ -342,7 +342,6 @@ use.ic-1 {
   overflow: hidden;
   transition: all 0.3s;
   background-size: cover;
-
 }
 
 .galery .slick-active.slick-center .galery-item {
@@ -554,7 +553,7 @@ textarea:focus {
 }
 .input__field {
   background: transparent;
-  padding: 1em 1em 0.25em 2.55em;
+  padding: 1em 1em 0.25em 41px;
   width: 100%;
   color: #404040;
   font-size: 22px;
