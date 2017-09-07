@@ -342,6 +342,8 @@ use.ic-1 {
   margin: 10px 0 20px;
   overflow: hidden;
   transition: all 0.3s;
+  background-size: cover;
+  
 }
 
 .galery .slick-active.slick-center .galery-item {
