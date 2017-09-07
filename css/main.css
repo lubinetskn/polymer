@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 html {
   color: #222;
   font-size: 1em;
@@ -52,7 +53,9 @@ textarea {
 /* ===== Initializr Styles ====== */
 
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font-family:'Roboto', Arial, Helvetica;
+  font-size: 16px;
+  line-height:26px;
 }
 
 .wrapper {
@@ -151,7 +154,7 @@ nav a:hover {
 
   nav a {
     margin: 0 1.7%;
-    padding: 19px 0;
+    padding: 24px 0 19px;
     margin-bottom: 0;
   }
 
@@ -229,7 +232,7 @@ nav a:hover {
    =============== */
 
   .wrapper {
-    width: 1026px; /* 1140px - 10% for margins */
+    width: 1200px; /* 1140px - 10% for margins */
     margin: 0 auto;
   }
 }

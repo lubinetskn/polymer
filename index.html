@@ -13,20 +13,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
     />
 
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -44,7 +41,22 @@
                 style="transform:translate(50%)"></path>
         </symbol>
     </svg>
-
+    <div class="header-mobile hidden-desktop">
+      <div class="header-mobile__logo">
+        <a href="/"><img src="./img/mlogo.png" /></a>
+      </div>
+      <input type="checkbox" id="burger-check" />
+      <label for="burger-check" class="header-mobile__burger">
+        <span></span>
+      </label>
+      <nav class="mobile-menu">
+        <a href="#products">Продукция</a>
+        <a href="#technology">Технология</a>
+        <a href="#why-we">Правильный выбор</a>
+        <a href="#experience">Опыт</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
     <div class="header-container">
         <h1 class="telephone">
             <div class="wrapper clearfix phone">
@@ -67,7 +79,7 @@
                 <div class="header-logo__img"><img src="img/logo.png" alt=""></div>
             </div>
         </header>
-        <div class="wrapper clearfix">
+        <div class="wrapper clearfix" id="home">
             <div class="title--red">Технологии нефтегазовой промышленности</div>
             <div class="title--gray">На службе строительной отрасли</div>
             <div class="button"><a href="#products" class="btn trans-link">ПОДРОБНЕЕ</a></div>
@@ -84,7 +96,7 @@
             <div class="column__wrapper">
                 <div class="column">
                     <div class="column__firstcell">
-                        <div>32</div>руб
+                        <div class="counter">30</div>руб
                     </div>
                     <div class="column__secondcell">
                         за м2
@@ -95,7 +107,7 @@
 
                 <div class="column">
                     <div class="column__firstcell">
-                        <div>30</div>лет
+                        <div class="counter">30</div>лет
                     </div>
                     <div class="column__secondcell">
                         Срок службы
@@ -103,9 +115,8 @@
                 </div>
             </div>
             <div class="info">
-                <p>Опыт, понимание технических процессов и знания, накопленные компанией в индустрии производства защитных материалов
-                    для нефтегазовой отрасли позволили реализовать производство собственной линейки материалов для нужд профессионалов
-                    строительной отрасли.
+                <p>Знания и опыт, полученные при решении задач защиты объектов нефтегазовой отрасли позволили реализовать производство
+                    собственной линейки материалов для нужд профессионалов строительной отрасли.
                 </p>
                 <p class="info_item">
                     Качество линейки защитных материалов на основе полимочевины «СпецИзол» испытано суровым климатом севера, зноем жаркого юга
@@ -116,7 +127,7 @@
 
             <div class="subtext">
                 *Расчет с учетом средней стоимости защитного покрытия со сроком службы 30 лет и толщиной не менее 2 мм в случае соблюдения
-                технологического регламента и реdivкомендаций по нанесению материала. Ориентировочная стоимость указана без
+                технологического регламента и рекомендаций по нанесению материала. Ориентировочная стоимость указана без
                 учета НДС.
             </div>
         </div>
@@ -140,42 +151,70 @@
         </div>
         <div class="spheres">
             <div class="spheres-item">
-                <img src="./img/spheres_1.jpg" alt="">
+
+                <a href="#win1"><img title="" src="./img/s1.jpg"  alt="" /></a>
+
                 <div class="spheres-title">ГИДРОИЗОЛЯЦИЯ КРОВЛИ</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_2.jpg" alt="">
-                <div class="spheres-title">ГИДРОИЗОЛЯЦИЯ БЕТОННЫХ ЗДАНИЙ И СООРУЖЕНИЙ</div>
+                <a href="#win2"><img src="./img/s2.jpg" alt=""></a>
+                <div class="spheres-title">ГИДРОИЗОЛЯЦИЯ ФУНДАМЕНТА</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_3.jpg" alt="">
-                <div class="spheres-title">ОБУСТРОЙСТВО ВОДОЕМОВ</div>
+                <a href="#win3"><img src="./img/s3.jpg" alt=""></a>
+                <div class="spheres-title">ОБУСТРОЙСТВО ВОДНЫХ СООРУЖЕНИЙ</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_4.jpg" alt="">
-                <div class="spheres-title">АНТИККОРРОЗИОННАЯ ЗАШИТА ЕМКОСТЕЙ</div>
+                <a href="#win4"><img src="./img/s4.jpg" alt=""></a>
+                <div class="spheres-title">ОБУСТРОЙСТВО ПОЛОВ</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_5.jpg" alt="">
+                <a href="#win5"><img src="./img/s5.jpg" alt=""></a>
                 <div class="spheres-title">ЗАЩИТА ОТ ИСТИРАНИЯ</div>
             </div>
             <div class="spheres-item">
-                <img src="./img/spheres_6.jpg" alt="">
-                <div class="spheres-title">НАПОЛЬНЫЕ ПОКРЫТИЯ</div>
-            </div>
-            <div class="spheres-item">
-                <img src="./img/spheres_7.jpg" alt="">
-                <div class="spheres-title">АНТИККОРРОЗИОННАЯ ЗАШИТА НЕФТЕГАЗОВОГО ОБОРУДОВАНИЯ</div>
-            </div>
-            <div class="spheres-item">
-                <img src="./img/spheres_8.jpg" alt="">
-                <div class="spheres-title">АНТИККОРРОЗИОННАЯ ЗАШИТА СУДОВ</div>
-            </div>
-            <div class="spheres-item">
-                <img src="./img/spheres_9.jpg" alt="">
-                <div class="spheres-title">ЗАЩИТНОЕ ДЕКОРАТИВНОЕ ПОКРЫТИЯ</div>
+                <a href="#win6"><img src="./img/s6.jpg" alt=""></a>
+                <div class="spheres-title">АНТИКОРОЗИОННАЯ ЗАЩИТА</div>
             </div>
         </div>
+
+        <!-- Модальное окна -->
+        <a href="#x" class="overlay" id="win1"></a>
+        <div class="popup">
+            <img class="is-image" src="./img/s1.jpg" alt="" />
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+        <a href="#x" class="overlay" id="win2"></a>
+        <div class="popup">
+            <img class="is-image" src="./img/s2.jpg" alt="" />
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+        <a href="#x" class="overlay" id="win3"></a>
+        <div class="popup">
+            <img class="is-image" src="./img/s3.jpg" alt="" />
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+        <a href="#x" class="overlay" id="win4"></a>
+        <div class="popup">
+            <img class="is-image" src="./img/s4.jpg" alt="" />
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+        <a href="#x" class="overlay" id="win5"></a>
+        <div class="popup">
+            <img class="is-image" src="./img/s5.jpg" alt="" />
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
+        <a href="#x" class="overlay" id="win6"></a>
+        <div class="popup">
+            <img class="is-image" src="./img/s6.jpg" alt="" />
+            <a class="close" title="Закрыть" href="#close"></a>
+        </div>
+
     </section>
 
     <section class="main-container back-setka" id="why-we">
@@ -227,31 +266,199 @@
             <div>
                 <div class="galery-item">
                     <img src="./img/gallery_1.jpg" alt="">
-                    <div class="galery-title">ЛАБОРАТОРНЫЕ ИСПЫТАНИЯ 1</div>
+                    <div class="galery-title">Адгезионные испытания полимочевины</div>
                 </div>
             </div>
             <div>
                 <div class="galery-item">
                     <img src="./img/gallery_2.jpg" alt="">
-                    <div class="galery-title">ЛАБОРАТОРНЫЕ ИСПЫТАНИЯ 2</div>
+                    <div class="galery-title">Антикорозионная защита металла</div>
                 </div>
             </div>
             <div>
                 <div class="galery-item">
                     <img src="./img/gallery_3.jpg" alt="">
-                    <div class="galery-title">ЛАБОРАТОРНЫЕ ИСПЫТАНИЯ 3</div>
+                    <div class="galery-title">Антикорозионная защита металла</div>
                 </div>
             </div>
             <div>
                 <div class="galery-item">
-                    <img src="./img/spheres_1.jpg" alt="">
-                    <div class="galery-title">ЛАБОРАТОРНЫЕ ИСПЫТАНИЯ 4</div>
+                    <img src="./img/gallery_4.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
                 </div>
             </div>
             <div>
                 <div class="galery-item">
-                    <img src="./img/spheres_2.jpg" alt="">
-                    <div class="galery-title">ЛАБОРАТОРНЫЕ ИСПЫТАНИЯ 5</div>
+                    <img src="./img/gallery_5.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_6.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_7.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_8.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_9.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_10.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_11.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита металла</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_12.jpg" alt="">
+                    <div class="galery-title">Антикорозионная защита свай на причале</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_13.jpg" alt="">
+                    <div class="galery-title">Гидроизоляци кровли</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_14.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция бассейна</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_15.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция бетона</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_16.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция бетона</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_17.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция кровли</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_18.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция кровли</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_19.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция кровли</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_20.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция кровли</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_21.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция кровли</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_22.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция кровли</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_23.jpg" alt="">
+                    <div class="galery-title">Гидроизоляция</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_24.jpg" alt="">
+                    <div class="galery-title">Емкости для перевозки живой рыбы</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_25.jpg" alt="">
+                    <div class="galery-title">Защита баржи</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_26.jpg" alt="">
+                    <div class="galery-title">Защита палубы теплохода</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_27.jpg" alt="">
+                    <div class="galery-title">Защита плит ЭППС</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_28.jpg" alt="">
+                    <div class="galery-title">Испытание полимочевины на диэлектрическую сплошность</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_29.jpg" alt="">
+                    <div class="galery-title">Испытание полимочевины на растяжение</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_30.jpg" alt="">
+                    <div class="galery-title">Испытание полимочевины на растяжение</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_31.jpg" alt="">
+                    <div class="galery-title">Оборудование для нанесения</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_32.jpg" alt="">
+                    <div class="galery-title">Окрасочная кмера для нанесения полимочевины на заводе</div>
+                </div>
+            </div>
+            <div>
+                <div class="galery-item">
+                    <img src="./img/gallery_33.jpg" alt="">
+                    <div class="galery-title">Пластины полимочевина</div>
                 </div>
             </div>
         </div>
@@ -270,11 +477,10 @@
                     <div class="map-info button">
                         <div class="map-info__col">
                             <h3 class="map-info__title">ЦЕНТРАЛЬНЫЙ ОФИС</h3>
-                            <div class="map-info__phone"><a href="tel:+7495">+7(495)786-67-11</a></div>
+                            <div class="map-info__phone"><a href="tel:+74957866711">+7 (495) 786-67-11</a></div>
                             <div class="map-info__mail"><a href="amilto:info@spolymer.pro">info@spolymer.pro</a></div>
                             <div class="map-info__address">г. Москва, ул. Тверская, д. 12, стр. 1, офис 24</div>
                         </div>
-                        <div class="btn">Показать на карте</div>
                     </div>
 
                     <div class="map-info button">
@@ -282,7 +488,6 @@
                             <h3 class="map-info__title">ПРОИЗВОДСТВО И СКЛАД</h3>
                             <div class="map-info__address">г. Долгопрудный, Лихачевский проезд, д. 5 Территория завода ОАО «ПО «ТОС»</div>
                         </div>
-                        <div class="btn">Показать на карте</div>
                     </div>
                 </div>
                 <div class="contacts-table__right">
