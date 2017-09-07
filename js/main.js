@@ -135,11 +135,11 @@ $('.input__field').focusout(function() {
 
 $(document).ready(function() {
   $('.title--red').addClass('animated fadeInLeftBig');
-  $('.title--gray').addClass('animated fadeInRightBig');
+  setTimeout( function(){$('.title--gray').addClass('animated fadeInRightBig')},1000)
 
   setTimeout(function() {
     $('#home .btn').addClass('animated fadeIn');
-  }, 1000);
+  }, 2500);
 });
 
 var products = 0;
